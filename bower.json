@@ -1,0 +1,22 @@
+{
+  "name": "COTB-2016-Demo",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Paul Irwin <paulirwin@gmail.com>"
+  ],
+  "license": "None",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

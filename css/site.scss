@@ -1,0 +1,178 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+header {
+  position: fixed;
+  padding: 1em;
+  background-image: url(../img/main_bg.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  #logo {
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 40px;
+    text-indent: -9000px;
+    outline: none;
+    margin: 0;
+
+    @media screen and (min-width: 720px) {
+      min-height: 80px;
+    }
+  }
+}
+
+section#main {
+  background-image: url(../img/main_bg.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  color: white;
+  flex: 1 auto;
+  justify-content: center;
+
+  p {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1em;
+
+    &.title {
+      font-weight: 700;
+      font-size: 3em;
+    }
+  }
+
+  a {
+    margin-top: 1em;
+    color: white;
+    border: solid 2px white;
+    text-align: center;
+    font-size: 0.7em;
+    padding: 0.5em 1em;
+
+    &:hover {
+      background-color: white;
+      color: #AE5ED9;
+    }
+  }
+}
+
+section.content {
+  padding: 2em 1em;
+
+  h2, p {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.2em;
+    color: #666;
+    font-weight: 100;
+    margin: 1em auto;
+
+    @media screen and (min-width: 720px) {
+      width: 75%;
+    }
+
+    &.lead {
+      font-size: 1.4em;
+    }
+  }
+
+  iframe {
+    margin: 2em auto 1em auto;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+section#about {
+
+  background-image: url(../img/beach.jpg);
+  background-color: rgba(255,255,255,0.95);
+  background-blend-mode: screen;
+  background-size: cover;
+  background-attachment: fixed;
+
+  h2 {
+    color: #D38A59;
+    text-shadow: 5px 5px 20px #fff;
+  }
+}
+
+section#speakers {
+  background-image: url(../img/corridor.jpg);
+  background-color: rgba(0,0,0,0.7);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-attachment: fixed;
+
+  color: white;
+
+  p {
+    color: #eee;
+
+    a {
+      color: #9acfea;
+    }
+  }
+
+  .speaker {
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 720px) {
+      flex-direction: row;
+      align-items: flex-start;
+      width: 75%;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      display: block;
+      border-radius: 9999px;
+    }
+
+    .bio {
+
+      @media screen and (min-width: 720px) {
+        padding-left: 2em;
+      }
+
+      p {
+        text-align: left;
+        width: auto;
+      }
+    }
+  }
+}
+
+
+section#sponsors {
+
+  background-image: url(../img/verandina.jpg);
+  background-color: rgba(255,255,255,0.95);
+  background-blend-mode: screen;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
