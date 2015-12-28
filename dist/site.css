@@ -1,8 +1,29 @@
+/*-----------------------------------*
+  $Variables
+
+\*-----------------------------------*/
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
 html, body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666; }
+
+a {
+  color: #f05523;
+  text-decoration: none;
+  border-bottom: 1px dotted #f05523;
+  transition: all .25s ease; }
+  a:hover {
+    background-color: #f05523;
+    color: #fff;
+    transition: all .25s ease; }
 
 header {
   position: fixed;
@@ -32,11 +53,12 @@ section#main {
   -webkit-background-size: cover;
   background-size: cover;
   height: 100vh;
+  width: 100%;
   padding: 1em;
   display: flex;
   flex-direction: column;
   align-content: center;
-  color: white;
+  color: #fff;
   flex: 1 auto;
   justify-content: center; }
   section#main p {
@@ -45,21 +67,58 @@ section#main {
     line-height: 1em; }
     section#main p.title {
       font-weight: 700;
-      font-size: 3em; }
-  section#main a {
-    margin-top: 1em;
-    color: white;
-    border: solid 2px white;
+      font-size: 3em;
+      margin-bottom: .25em;
+      letter-spacing: -0.09rem; }
+    section#main p.date {
+      font-weight: 100;
+      margin-top: 0; }
+    section#main p.location {
+      font-weight: 700;
+      margin-top: 2em; }
+  section#main a.register-btn {
+    margin-top: 2em;
+    color: #fff;
+    border: solid 2px #fff;
     text-align: center;
     font-size: 0.7em;
-    padding: 0.5em 1em; }
-    section#main a:hover {
-      background-color: white;
-      color: #AE5ED9; }
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: all .25s ease; }
+    section#main a.register-btn:hover {
+      background-color: #fff;
+      color: #AE5ED9;
+      transition: all .25s ease;
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.18); }
+
+.conf-stats-item {
+  width: 20%; }
+  @media screen and (max-width: 720px) {
+    .conf-stats-item {
+      width: 50%;
+      justify-content: space-around; } }
+
+.conf-stats-headline {
+  font-size: 3em;
+  margin-bottom: 0;
+  color: #AE5ED9; }
+
+.conf-stats-line {
+  color: #666; }
+
+.about-content {
+  width: 50%;
+  padding: 4em; }
+  @media screen and (max-width: 720px) {
+    .about-content {
+      width: 100%;
+      padding: 1em;
+      flex-direction: column; } }
 
 section.content {
-  padding: 2em 1em; }
-  section.content h2, section.content p {
+  padding: 4em 1em;
+  width: 100%; }
+  section.content h2 {
     margin-bottom: 1em;
     text-align: center; }
   section.content p {
@@ -67,9 +126,6 @@ section.content {
     color: #666;
     font-weight: 100;
     margin: 1em auto; }
-    @media screen and (min-width: 720px) {
-      section.content p {
-        width: 75%; } }
     section.content p.lead {
       font-size: 1.4em; }
   section.content iframe {
@@ -78,12 +134,29 @@ section.content {
     width: 100%;
     max-width: 500px; }
 
+a.bookroom-btn {
+  color: #f05523;
+  border: solid 2px #f05523;
+  text-align: center;
+  padding: 1em 2em;
+  text-decoration: none;
+  transition: all .25s ease; }
+  a.bookroom-btn:hover {
+    background-color: #f05523;
+    color: #fff;
+    transition: all .25s ease;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.18); }
+
+.btn {
+  display: inline-block; }
+
 section#about {
   background-image: url(../img/beach.jpg);
   background-color: rgba(255, 255, 255, 0.95);
   background-blend-mode: screen;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
   section#about h2 {
     color: #D38A59;
     text-shadow: 5px 5px 20px #fff; }
@@ -94,11 +167,17 @@ section#speakers {
   background-blend-mode: multiply;
   background-size: cover;
   background-attachment: fixed;
-  color: white; }
+  width: 100%;
+  color: #fff; }
   section#speakers p {
-    color: #eee; }
+    color: #fff; }
     section#speakers p a {
-      color: #9acfea; }
+      color: #9acfea;
+      border-color: #9acfea; }
+      section#speakers p a:hover {
+        color: #f05523;
+        border-color: #f05523;
+        background-color: transparent; }
   section#speakers .speaker {
     margin: 1em auto;
     display: flex;
@@ -126,4 +205,30 @@ section#sponsors {
   background-color: rgba(255, 255, 255, 0.95);
   background-blend-mode: screen;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
+
+/*-----------------------------------*
+  $Utility Classes
+
+\*-----------------------------------*/
+.mt2 {
+  margin-top: 2em; }
+
+.flex-container {
+  display: flex;
+  width: 100%; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
+.c-text {
+  text-align: center; }
+
+@media screen and (max-width: 720px) {
+  .m-flex-col {
+    flex-direction: column; } }
+
+@media screen and (max-width: 720px) {
+  .m-full-w {
+    width: 100%; } }
