@@ -34,8 +34,8 @@ a {
   transition: all .25s ease;
 
   &:hover {
-    background-color: $cotb-orange;
-    color: $white;
+    color: $purple;
+    border-color: $purple;
     transition: all .25s ease;
   }
 }

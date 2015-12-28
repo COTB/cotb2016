@@ -21,8 +21,8 @@ a {
   border-bottom: 1px dotted #f05523;
   transition: all .25s ease; }
   a:hover {
-    background-color: #f05523;
-    color: #fff;
+    color: #AE5ED9;
+    border-color: #AE5ED9;
     transition: all .25s ease; }
 
 header {
