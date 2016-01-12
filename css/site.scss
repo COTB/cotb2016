@@ -37,6 +37,7 @@ a {
     color: $purple;
     border-color: $purple;
     transition: all .25s ease;
+    text-decoration: none;
   }
 }
 
@@ -289,6 +290,43 @@ section#sponsors {
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
+
+  .sponsors-container {
+    justify-content: center;
+  }
+
+  .sponsor {
+
+    padding: 1em;
+
+    img {
+      display: block;
+      width: 100%;
+      border: solid 2px #999;
+      padding: 5px;
+      background-color: #fff;
+    }
+
+    &.sponsor-inkind {
+      max-width: 50%;
+      margin: 0 auto;
+    }
+
+    @media screen and (min-width: 721px) {
+      &.sponsor-sunsky {
+        max-width: 50%;
+      }
+      &.sponsor-sandsea {
+        max-width: 33%;
+      }
+      &.sponsor-point {
+        max-width: 25%;
+      }
+      &.sponsor-inkind {
+        max-width: 20%;
+      }
+    }
+  }
 }
 
 

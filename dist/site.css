@@ -23,7 +23,8 @@ a {
   a:hover {
     color: #AE5ED9;
     border-color: #AE5ED9;
-    transition: all .25s ease; }
+    transition: all .25s ease;
+    text-decoration: none; }
 
 header {
   position: fixed;
@@ -207,6 +208,28 @@ section#sponsors {
   background-size: cover;
   background-attachment: fixed;
   width: 100%; }
+  section#sponsors .sponsors-container {
+    justify-content: center; }
+  section#sponsors .sponsor {
+    padding: 1em; }
+    section#sponsors .sponsor img {
+      display: block;
+      width: 100%;
+      border: solid 2px #999;
+      padding: 5px;
+      background-color: #fff; }
+    section#sponsors .sponsor.sponsor-inkind {
+      max-width: 50%;
+      margin: 0 auto; }
+    @media screen and (min-width: 721px) {
+      section#sponsors .sponsor.sponsor-sunsky {
+        max-width: 50%; }
+      section#sponsors .sponsor.sponsor-sandsea {
+        max-width: 33%; }
+      section#sponsors .sponsor.sponsor-point {
+        max-width: 25%; }
+      section#sponsors .sponsor.sponsor-inkind {
+        max-width: 20%; } }
 
 /*-----------------------------------*
   $Utility Classes
