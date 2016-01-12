@@ -77,8 +77,9 @@ section#main {
     font-size: 2em;
     line-height: 1em; }
     section#main p.title {
+      margin-top: 1em;
       font-weight: 700;
-      font-size: 3em;
+      font-size: 2.5em;
       margin-bottom: .25em;
       letter-spacing: -0.09rem; }
     section#main p.date {
@@ -87,6 +88,11 @@ section#main {
     section#main p.location {
       font-weight: 700;
       margin-top: 2em; }
+    section#main p.price {
+      font-size: 1.3em; }
+      section#main p.price .strike {
+        text-decoration: line-through;
+        color: rgba(255, 255, 255, 0.7); }
   section#main a.register-btn {
     margin-top: 2em;
     color: #fff;
@@ -294,6 +300,11 @@ section#videos {
     section#videos .playlist a span {
       display: block;
       text-align: center; }
+
+@media screen and (min-width: 721px) {
+  section#contact {
+    max-width: 75%;
+    margin: auto; } }
 
 /*-----------------------------------*
   $Utility Classes
