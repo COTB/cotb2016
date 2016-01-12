@@ -26,6 +26,15 @@ a {
     transition: all .25s ease;
     text-decoration: none; }
 
+address, .pre {
+  white-space: pre-line; }
+
+dl {
+  font-size: 1.2em; }
+
+dd {
+  margin-bottom: 1em; }
+
 header {
   position: fixed;
   padding: 1em;
@@ -35,7 +44,8 @@ header {
   background-size: cover;
   top: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  z-index: 9999; }
   header #logo {
     background-image: url(../img/logo.png);
     background-size: contain;
@@ -230,6 +240,60 @@ section#sponsors {
         max-width: 25%; }
       section#sponsors .sponsor.sponsor-inkind {
         max-width: 20%; } }
+
+section#videos {
+  background-image: url(../img/keynote.jpg);
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  color: #fff; }
+  section#videos p a {
+    color: #9acfea;
+    border-color: #9acfea; }
+    section#videos p a:hover {
+      color: #f05523;
+      border-color: #f05523;
+      background-color: transparent; }
+  section#videos .playlist {
+    margin-bottom: 2em; }
+    section#videos .playlist img {
+      width: 100%; }
+    section#videos .playlist a {
+      border: solid 2px #ccc;
+      position: relative;
+      width: 100%;
+      display: block;
+      z-index: 0; }
+      section#videos .playlist a span.glyphicon {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 4em;
+        text-shadow: 5px 5px 15px #000; }
+      section#videos .playlist a span.title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 1.5em;
+        color: white;
+        padding: 1em;
+        background-color: rgba(0, 0, 0, 0.7); }
+      @media screen and (min-width: 721px) {
+        section#videos .playlist a {
+          max-width: 50%;
+          margin: 0 auto; } }
+    section#videos .playlist a span {
+      display: block;
+      text-align: center; }
 
 /*-----------------------------------*
   $Utility Classes
